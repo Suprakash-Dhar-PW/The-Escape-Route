@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book 1:Exploring Technology</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+
+        a:hover,
+        .card:hover,
+        .btn:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            animation: backgroundFade 1s infinite alternate;
+            background-size: 200% 200%;
+        }
+
+        @keyframes backgroundFade {
+            0% {
+                background: radial-gradient(ellipse at top, red, blue);
+            }
+
+            100% {
+                background: radial-gradient(ellipse at bottom, blue, red);
+            }
+        }
+
+
+        .section {
+            margin: 20px;
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        img {
+            margin-top: 10px;
+            width: 100%;
+            height: auto;
+            max-width: 60%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        details {
+            margin-top: 10px;
+        }
+
+        h5 {
+            margin-top: 20px;
+            font-size: clamp(16px, 3vw, 20px);
+        }
+
+        .feedback {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        dl {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 350px;
+            padding: 20px;
+            background-color: rgb(215, 215, 215);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .section {
+                margin: 15px;
+                padding: 15px;
+            }
+
+            header div {
+                padding: 10px;
+            }
+
+            dl {
+                padding: 15px;
+            }
+
+            .btn {
+                padding: 8px 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            details summary {
+                font-size: 14px;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+
+            .form-control {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+
+                <!-- Brand Name -->
+                <a class="navbar-brand ms-2" href="#">THE ESCAPE ROUTE</a>
+
+                <!-- Toggle Button for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://127.0.0.1:5503/Projects/Book-Showcase.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: red;" href="http://127.0.0.1:5503/Projects/book.html">Books</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://127.0.0.1:5503/Projects/About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://127.0.0.1:5503/Projects/Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://127.0.0.1:5503/Projects/Login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="section">
+            <h5><b>Book 3: The Complete Novels of Jane Austen</b></h5>
+            <img src="../public/images/jane-austen book.jpg" alt="Book Cover" class="rounded">
+
+            <details>
+                <summary><b>Genre</b></summary>
+                <ul>
+                    <li><b>Romance</b> – Central to all of Austen’s novels, focusing on love, courtship, and marriage.</li>
+                    <li><b>Social Commentary</b> – Sharp observations on class, gender roles, and society in 18th- and 19th-century England.</li>
+                    <li><b>Satire</b> – Subtle humor and irony, often critiquing societal norms and expectations.</li>
+                    <li><b>Coming-of-Age</b> (Bildungsroman) – Many of her protagonists, like Elizabeth Bennet (Pride and Prejudice) and Emma Woodhouse (Emma), undergo personal growth and self-discovery.</li>
+                    <li><b>Domestic Fiction</b> – Stories centered around everyday life, family, and relationships in the Regency era.</li>
+                </ul>
+            </details>
+            <details>
+                <summary><b>Index Page</b></summary>
+                <ol>
+                    <li><b>Introduction</b></li>
+                    <li><b>Sense and Sensibility</b> – 50 chapters</li>
+                    <li><b>Pride and Prejudice</b> – 61 chapters</li>
+                    <li><b>Mansfield Park</b> – 48 chapters</li>
+                    <li><b>Emma</b> – 55 chapters</li>
+                    <li><b>Northanger Abbey</b> – 31 chapters</li>
+                    <li><b>Persuasion</b> – 24 chapters</li>
+                </ol>
+            </details>
+            <details>
+                <summary><b>Authors</b></summary>
+                Jane Austen
+            </details>
+            <details>
+                <summary><b>Overview</b></summary>
+                Jane Austen’s collected works consist of six classic novels that explore love, society, and personal growth in 18th- and 19th-century England. Her novels are known for their wit, keen social observations, and strong, independent female protagonists.
+            </details>
+            <details>
+                <summary><b>Why would you Recommened this Book to someone else?</b></summary>
+                <ul>
+                    <li><b>Sharp Social Commentary –</b><br>
+                        Austen critiques class distinctions, gender roles, and marriage in Regency England.</li>
+                    <li><b>Strong Female Characters –</b>
+                        Her heroines are intelligent, witty, and independent.
+                    </li>
+                    <li><b>Timeless Themes – </b><br>
+                        Love, self-discovery, and societal pressures remain relevant today.</li>
+                    <li><b>Beautiful Writing –</b><br>
+                        Her novels feature elegant prose, humor, and memorable dialogue.</li>
+                </ul>
+            </details>
+            <details>
+                <summary><b>Purchase Links</b></summary>
+                <ul>
+                    <li><a
+                            href="https://www.amazon.in/COMPLETE-NOVELS-JANE-AUSTEN/dp/1684129060/ref=sr_1_3?crid=1CIW7IS9QDG37&dib=eyJ2IjoiMSJ9.unPNM0CUcpJlNyMiTtP-rTOoUMP2zZIEa7hHbuTq8JLmSpo83MFXRiUEIHTZJypeA6CXcNVlU-kWI1Ol00Gyn9NivnI82Xu64pzWeVTLpuOfg-1U8tWqZzZnV8usJd3FrgVMI7uB_GXqpT90GBoV38L30RaQsbhD339X0vmxe7ILzHONV6wHYVwYZQPAIyRP_20SjiE4wiKG24WUcRJV9pcgRQ6Xf0fhxxRowX84WZg.82Gxst956jQjJlUlZzkL8KDfU4ml7bhK2R-k6SZqIAk&dib_tag=se&keywords=The+Complete+Novels+of+Jane+Austen&qid=1742410400&s=books&sprefix=the+complete+novels+of+jane+austen%2Cstripbooks%2C252&sr=1-3">Amazon</a>
+                    </li>
+                    <li><a
+                            href="https://www.flipkart.com/complete-novels-jane-austen-hardcover/p/itmb4c82674e88d6?pid=9789362086600&lid=LSTBOK9789362086600MEKEKL&marketplace=FLIPKART&q=The+complete+novels+of+jane+austen&store=bks&srno=s_1_8&otracker=search&otracker1=search&fm=search-autosuggest&iid=16aac524-77ed-4111-915e-09ef9a6b7478.9789362086600.SEARCH&ppt=sp&ppn=sp&ssid=wgy3k98ezk0000001742410440782&qH=222ad0fa91cd22aa">Flipkart</a>
+                    </li>
+                </ul>
+            </details>
+
+            <h5><b>Feedback Form</b></h5>
+
+            <div class="feedback">
+                <form action="">
+                    <dl>
+                        <dt>Name</dt>
+                        <dd><input type="text" name="txtUsername" required class="form-control"></dd>
+                        <dt>Feedback</dt>
+                        <dd><textarea name="txtFeedback" class="form-control" required></textarea></dd>
+                        <button class="btn btn-primary form-control">Submit Feedback</button>
+                    </dl>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #222; color: #fff; font-family: 'Arial', sans-serif; padding: 10px;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <!-- Website Name and Tagline -->
+            <div>
+                <h2 style="font-size: 28px; font-weight: bold; margin-bottom: 10px;">The Escape Route</h2>
+            </div>
+
+            <!-- Legal Links -->
+            <div style="font-size: 14px;">
+                <p>&copy; 2025 The Escape Route. All rights reserved.</p>
+                <p>
+                    <a href="/privacy-policy" style="color: #fff; text-decoration: none; margin-right: 15px;">Privacy
+                        Policy</a>|
+                    <a href="/terms-of-service" style="color: #fff; text-decoration: none; margin-right: 15px;">Terms of
+                        Service</a>|
+                    <a href="/sitemap" style="color: #fff; text-decoration: none; margin-left: 15px;">Sitemap</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

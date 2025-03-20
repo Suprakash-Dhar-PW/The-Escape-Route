@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book 1:Exploring Technology</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        a:hover,
+        .card:hover,
+        .btn:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            animation: backgroundFade 1s infinite alternate;
+            background-size: 200% 200%;
+        }
+
+        @keyframes backgroundFade {
+            0% {
+                background: radial-gradient(ellipse at top, red, blue);
+            }
+
+            100% {
+                background: radial-gradient(ellipse at bottom, blue, red);
+            }
+        }
+
+
+        .section {
+            margin: 20px;
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        img {
+            margin-top: 10px;
+            width: 100%;
+            height: auto;
+            max-width: 60%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        details {
+            margin-top: 10px;
+        }
+
+        h5 {
+            margin-top: 20px;
+            font-size: clamp(16px, 3vw, 20px);
+        }
+
+        .feedback {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        dl {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 350px;
+            padding: 20px;
+            background-color: rgb(215, 215, 215);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .section {
+                margin: 15px;
+                padding: 15px;
+            }
+
+            header div {
+                padding: 10px;
+            }
+
+            dl {
+                padding: 15px;
+            }
+
+            .btn {
+                padding: 8px 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            details summary {
+                font-size: 14px;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+
+            .form-control {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+
+                <!-- Brand Name -->
+                <a class="navbar-brand ms-2" href="#">THE ESCAPE ROUTE</a>
+
+                <!-- Toggle Button for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://127.0.0.1:5503/Projects/Book-Showcase.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: red;" href="http://127.0.0.1:5503/Projects/book.html">Books</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://127.0.0.1:5503/Projects/About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://127.0.0.1:5503/Projects/Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://127.0.0.1:5503/Projects/Login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="section">
+            <h5><b>Book 1: Harry Potter and the Chamber of Secrets</b></h5>
+            <img src="../public/images/harry potter book.jpg" alt="Book Cover" class="rounded">
+
+            <details>
+                <summary><b>Genre</b></summary>
+                <ul>
+                    <li>Fantasy 🧙‍♂️</li>
+                    <li>Adventure ⚔️</li>
+                    <li>Mystery 🕵️‍♂️</li>
+                    <li>Young Adult Fiction 📖</li>
+                    <li>Magic Realism ✨</li>
+                </ul>
+            </details>
+            <details>
+                <summary><b>Index Page</b></summary>
+                <ul>
+                    <li><b>Introduction</b></li>
+                    <li>Chapter 1:The Worst Birthday</li>
+                    <li>Chapter 2:Dobby's Warning</li>
+                    <li>Chapter 3:The Burrow</li>
+                    <li>Chapter 4:At Flourish and Blotts</li>
+                    <li>Chapter 5:The Whomping Willow</li>
+                    <li>Chapter 6:Gilderoy Lockhart</li>
+                    <li>Chapter 7:Mudbloods and Murmurs</li>
+                    <li>Chapter 8:The Deathday Party</li>
+                    <li>Chapter 9:The Writing on the Wall</li>
+                    <li>Chapter 10:The Rogue Bludger</li>
+                    <li>Chapter 11:The Dueling Club</li>
+                    <li>Chapter 12:The Polyjuice Potion</li>
+                    <li>Chapter 13:The Very Secret Diary</li>
+                    <li>Chapter 14:Cornelius Fudge</li>
+                    <li>Chapter 15:Aragog</li>
+                    <li>Chapter 16:The Chamber of Secrets</li>
+                    <li>Chapter 17:The Heir of Slytherin</li>
+                    <li>Chapter 18:Dobby's Reward</li>
+                </ul>
+            </details>
+            <details>
+                <summary><b>Authors</b></summary>
+                J.K. Rowling
+            </details>
+            <details>
+                <summary><b>Overview</b></summary>
+                Harry Potter and the Chamber of Secrets is the second book in the Harry Potter series by J.K. Rowling.
+                It follows Harry Potter, a young wizard, as he returns to Hogwarts School of Witchcraft and Wizardry for
+                his second year. However, strange and terrifying events begin to unfold when the Chamber of Secrets is
+                opened, unleashing a mysterious monster that petrifies students.
+            </details>
+            <details>
+                <summary><b>Why would you Recommened this Book to someone else?</b></summary>
+                <ul>
+                    <li><b>It’s a Perfect Mix of Mystery and Adventure.</b><br>
+                        The book keeps you hooked with its dark secrets, magical creatures, and unexpected twists. The
+                        mystery of the Chamber and the monster attacking students makes it a real page-turner.</li>
+                    <li><b>Deeper Character Development.</b>
+                        We see Harry, Ron, and Hermione grow as characters, facing bravery, fear, and challenges beyond
+                        their years. Even side characters like Ginny Weasley and Dobby play crucial roles in the story.
+                    </li>
+                    <li><b>A Magical World with Amazing Details.</b><br>
+                        From flying cars to Polyjuice Potion, the book expands the wizarding world in a way that feels
+                        alive and immersive.</li>
+                    <li><b>Important Themes and Lessons.</b><br>
+                        It explores deep themes like prejudice (pure-blood vs. Muggle-born), bravery, friendship, and
+                        the power of choices—teaching important values while keeping it entertaining.</li>
+                    <li><b>It’s a Great Follow-Up to the First Book.</b>    <br>
+                        If you enjoyed The Sorcerer’s Stone, this sequel takes the magic to the next level with darker
+                        twists, thrilling action, and new magical discoveries.</li>
+                </ul>
+            </details>
+            <details>
+                <summary><b>Purchase Links</b></summary>
+                <ul>
+                    <li><a
+                            href="https://www.amazon.in/Harry-Potter-Chamber-Secrets-Paper/dp/B0DHRYFHK2/ref=sr_1_3?crid=31CZQHP3G8F8T&dib=eyJ2IjoiMSJ9.HDdL1CjMPeQJFF59KLwcEI97sjRqOQUHiASTVN-wW99ozW3AyetEF2dkCUoCuxdJVHLS2hYXv0CcIQ5Yw1xnCQqtDeVB6k6mk7gQV13UVxOVZl9Qn12p0Emin4llVDx3VwS6sxCeEEkQurZ4oc9HjoEWO6VDNd4TIhPL4YzAUhIyv_IwkgLLfIpyR8zvMLrBIVDRZ61uG37SH7NKp8ruFptzGRIG4Wl7AcFnI4UiSEo.Lnh4nE7rMC_RLjbmn8ClNOkjyeTQATbbGGld8HnuA98&dib_tag=se&keywords=harry+potter+and+the+chamber+of+secrets&qid=1742407312&s=books&sprefix=harry+potter+and+chamber+%2Cstripbooks%2C216&sr=1-3">Amazon</a>
+                    </li>
+                    <li><a
+                            href="https://www.flipkart.com/harry-potter-chamber-secrets/p/itmfc4k68a8hapcf?pid=9781408855669&lid=LSTBOK97814088556698AUK3P&marketplace=FLIPKART&q=harry+potter+and+chamber+of+secrets&store=bks&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_25_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_25_na_na_na&fm=organic&iid=2c89379c-3953-4186-b779-33caaf88f90f.9781408855669.SEARCH&ppt=None&ppn=None&ssid=u873np5bds0000001742407363617&qH=8ca3cd4d0de5ec08">Flipkart</a>
+                    </li>
+                </ul>
+            </details>
+
+            <h5><b>Feedback Form</b></h5>
+
+            <div class="feedback">
+                <form action="">
+                    <dl>
+                        <dt>Name</dt>
+                        <dd><input type="text" name="txtUsername" required class="form-control"></dd>
+                        <dt>Feedback</dt>
+                        <dd><textarea name="txtFeedback" class="form-control" required></textarea></dd>
+                        <button class="btn btn-primary form-control">Submit Feedback</button>
+                    </dl>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #222; color: #fff; font-family: 'Arial', sans-serif; padding: 10px;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <!-- Website Name and Tagline -->
+            <div>
+                <h2 style="font-size: 28px; font-weight: bold; margin-bottom: 10px;">The Escape Route</h2>
+            </div>
+
+            <!-- Legal Links -->
+            <div style="font-size: 14px;">
+                <p>&copy; 2025 The Escape Route. All rights reserved.</p>
+                <p>
+                    <a href="/privacy-policy" style="color: #fff; text-decoration: none; margin-right: 15px;">Privacy
+                        Policy</a>|
+                    <a href="/terms-of-service" style="color: #fff; text-decoration: none; margin-right: 15px;">Terms of
+                        Service</a>|
+                    <a href="/sitemap" style="color: #fff; text-decoration: none; margin-left: 15px;">Sitemap</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
